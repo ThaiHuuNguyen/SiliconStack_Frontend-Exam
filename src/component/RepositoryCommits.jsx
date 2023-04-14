@@ -35,7 +35,7 @@ const RepositoryCommits = () => {
         sx={{
           backgroundImage: `url(${Image})`,
           backgroundSize: "cover",
-          height: "100vh",
+          height: "300vh",
         }}
       >
         <Box display={"flex"} justifyContent={"center"}>
