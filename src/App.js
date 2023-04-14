@@ -1,7 +1,7 @@
 import {  BrowserRouter,
     Routes,
     Route } from 'react-router-dom';
-import Search from './component/Search';
+import Search from "./component/Search"
 import UserRepos from './component/UserRepos';
 import RepositoryCommits from './component/RepositoryCommits';
 

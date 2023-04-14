@@ -55,12 +55,15 @@ const RepositoryCommits = () => {
                   boxShadow: "10px 10px 20px #000000 ",
                 },
                 height: "200px",
-                width: "50%",
+                width: "100%",
+                margin: "10px 0",
+                display: "flex",
+                flexWrap: "wrap",
                 // background: "transparent linear-gradient(#00C9FF,#92FE9D)",
               }}
             >
               {commits.map((commit) => (
-                <li
+                <div
                   key={commit.sha}
                   onClick={() => handleCommitClick(commit.html_url)}
                 >
@@ -69,7 +72,7 @@ const RepositoryCommits = () => {
                   </Typography>
                   <Typography variant="h5">{commit.commit.message}</Typography>
                   <Typography variant="h6">ID: {commit.sha}</Typography>
-                </li>
+                </div>
               ))}
             </Button>
           ) : (
